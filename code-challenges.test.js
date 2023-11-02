@@ -19,10 +19,32 @@ const numbersArray2 = [24, 27, 30, 33, 36]
 // Expected output: [72, 81, 90, 99, 108]
 
 // b) Create the function that makes the test pass.
+// function multipliedByThree(arr) {
+//     const result = arr.map((number) => number * 3);
+//     return result;
+// }
+// const result1 =multipliedByThree(numbersArray1);
+// const result2 = multipliedByThree(numbersArray2);
 
-// Pseudo code:
+// console.log(result1)   //output: [18, 21, 24, 27, 30]
+// console.log(result2)    //output: [72, 81, 90, 99, 108]
+
+// Pseudo code:i used the multiplybythree method because it takes the arrays and recreates into new array to make each one three times its number. 
 
 // --------------------1) Create a function that takes a object as an argument and decides if the number inside it is evenly divisible by three or not.
+// function isDivisibleByThree(obj) {
+//     // checking to see if the number exist in the object 
+// if (typeof obj.number === `number`) {
+// // checking to see if we can evenly divide by three
+// return obj.number % 3 === 0;
+// } else {
+//     // if it is missing it snumber property, it will return as false 
+//     return false;
+// }
+// }
+
+// console.log(isDivisibleByThree(object1)) 
+// received error and cannot think of what could work for this?
 
 // a) Create a test with expect statements for each of the variables provided.
 
@@ -34,6 +56,22 @@ const object3 = { number: -7 }
 // Expected output: "-7 is not divisible by three"
 
 // b) Create the function that makes the test pass.
+function checkDivBythr(obj) {
+    // Extract the 'number' property from the object
+    const number = obj.number;
+  
+    // Check if the number is divisible by three
+    if (number % 3 === 0) {
+      return `${number} is divisible by three`;
+    } else {
+      return `${number} is not divisible by three`;
+    }
+  }
+
+  console.log(checkDivBythr(object1)); // Output: "15 is divisible by three"
+  console.log(checkDivBythr(object2)); // Output: "0 is divisible by three"
+  console.log(checkDivBythr(object3)); // Output: "-7 is not divisible by three"
+  
 
 // Pseudo code:
 

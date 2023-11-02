@@ -8,42 +8,43 @@
 
 // --------------------1) What will this log?
 
-const cohort = "Hotel 2023"
-// console.log(cohort.split(" "))
+// // const cohort = "Hotel 2023"
+// // console.log(cohort.split(" "))
 
-// a) Your answer:
-// b) Verify and explain:
+// // a) Your answer:each word will be split diff 
+// // b) Verify and explain:
+// // [ 'Hotel', '2023' ] i thought that the words would be spread individually and it only split the word with a coma and seperated both words instead of idividually. this is becasue we have the quotes spaced out insteaad of the double quotes together.
 
-// --------------------2) What will this log?
+// // --------------------2) What will this log?
 
-const greeter = (name) => {
-  `Hello, ${name}!`
-}
+// const greeter = (name) => {
+//   `Hello, ${name}!`
+// }
 // console.log(greeter("LEARN Student"))
 
-// a) Your answer:
-// b) Verify and explain:
+// a) Your answer: error
+// b) Verify and explain: came with undefined due to not having a return line after line 20 passed the curly braces
 
 // --------------------3) What will this log?
 
-const onlyOdds = [11, 12, 13, 14, 15].filter((number) => number % 2 !== 0)
+// const onlyOdds = [11, 12, 13, 14, 15].filter((number) => number % 2 !== 0)
 // console.log(onlyOdds)
 
-// a) Your answer:
-// b) Verify and explain:
+// a) Your answer:only the odd numbers will happen, 11, 13, 15
+// b) Verify and explain:answer was correct because filter method of searching only for the odd variables
 
 // --------------------4) What will this log?
 
-const myCodingSkills = {
-  languages: ["JavaScript", "Ruby"],
-  frameworks: ["React", "Ruby on Rails"],
-  databases: "PostgreSQL",
-  versionControl: "GitHub"
-}
-// console.log(myCodingSkills.languages[0])
+// const myCodingSkills = {
+//   languages: ["JavaScript", "Ruby"],
+//   frameworks: ["React", "Ruby on Rails"],
+//   databases: "PostgreSQL",
+//   versionControl: "GitHub"
+// }
+// // console.log(myCodingSkills.languages[0])
 
-// a) Your answer:
-// b) Verify and explain:
+// a) Your answer:javascript 
+// b) Verify and explain: the console is calling on languages to find the first position in that parenthesis. ran node and got javascript in return
 
 // --------------------5) What will this log?
 
@@ -55,7 +56,7 @@ class Learn {
   }
 }
 const learnStudent = new Learn("George")
-// console.log(learnStudent)
+console.log(learnStudent)
 
-// a) Your answer:
-// b) Verify and explain:
+// a) Your answer: adding George this.student = name
+// b) Verify and explain:we are letting the code know that we are going to be adding george to the program and output { student: 'George', cohort: 'Hotel', year: 2023 }
